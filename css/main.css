@@ -922,6 +922,7 @@ h2 {
 #portfolio a:hover:before {
 animation: shadow  0.2s linear;
   animation-fill-mode: forwards;
+  animation-duration: 0.7s;
 }
       
 
