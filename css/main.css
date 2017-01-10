@@ -921,7 +921,8 @@ h2 {
    
       #portfolio a:hover:before {
         /* FF3.6-15 */
-       animation: shadow  1s 1 linear;
+       animation: shadow  0.7s linear;
+        animation-iteration-count: 3; 
         }
 @keyframes shadow {
 from {
