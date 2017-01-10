@@ -918,9 +918,7 @@ h2 {
       left: 0;
       bottom: 0;
       right: 0; }
-    #portfolio a:hover {
-      -webkit-transition: all 1s ease;
-              transition: all 1s ease; }
+   
       #portfolio a:hover:before {
         /* FF3.6-15 */
         background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 0%, black 100%);
