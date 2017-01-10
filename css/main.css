@@ -939,7 +939,7 @@ to {
         /* Chrome10-25,Safari5.1-6 */
         background: -webkit-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 0%, black 100%);
         background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 0%, black 100%); 
-        
+        animation-play-state: paused; 
 }
 }
 #contacts {
