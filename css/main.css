@@ -930,6 +930,12 @@ background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 
         background: -webkit-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 0%, black 0%);
         background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 0%, black 0%);
 }
+  50% {
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 0%, black 50%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: -webkit-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 0%, black 50%);
+        background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 0%, black 50%);
+  }
 to {
     background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 0%, black 100%);
         /* Chrome10-25,Safari5.1-6 */
