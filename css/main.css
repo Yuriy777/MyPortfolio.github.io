@@ -920,25 +920,11 @@ h2 {
       right: 0; }
    
       #portfolio a:hover:before {
-        /* FF3.6-15 */
-       animation: shadow  0.7s linear;
-        animation-iteration-count: 3; 
-        }
-@keyframes shadow {
-from {
-background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 0%, black 0%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: -webkit-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 0%, black 0%);
-        background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 0%, black 0%);
-}
-  
-to {
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 0%, black 100%);
+       background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 0%, black 100%);
         /* Chrome10-25,Safari5.1-6 */
         background: -webkit-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 0%, black 100%);
-        background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 0%, black 100%);
-}
-}
+        background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 0%, black 100%); 
+        }
 
 #contacts {
   text-align: center;
