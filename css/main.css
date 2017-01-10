@@ -925,7 +925,10 @@ h2 {
         }
 @keyframes shadow {
 from {
-
+background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 0%, black 0%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: -webkit-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 0%, black 0%);
+        background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 0%, black 0%);
 }
 to {
     background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 0%, black 100%);
