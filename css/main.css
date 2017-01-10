@@ -920,7 +920,7 @@ h2 {
       right: 0; }
    
 #portfolio a:hover:before {
-animation: shadow  0.7s linear;
+animation: shadow  5s linear;
   animation-fill-mode: forwards;
 }
       
