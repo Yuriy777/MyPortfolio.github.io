@@ -932,7 +932,9 @@ h2 {
     padding: 10px;
     text-align: left; }
   #portfolio img {
-    vertical-align: middle; }
+    vertical-align: middle;
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;  }
   #portfolio ul {
     padding: 0;
     margin: 0; }
@@ -955,28 +957,17 @@ h2 {
     position: relative;
     display: block;
     height: 100%;
+    opacity: 0.8;
+    overflow: hidden;
     -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease; }
-    #portfolio a:before {
-      content: "";
-      -webkit-transition: all 1s ease;
-      transition: all 1s ease;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-       background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 100%, black 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: -webkit-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 100%, black 100%);
-        background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 100%, black 100%); 
-}
+    
    
-#portfolio a:hover:before {
-        background: -webkit-radial-gradient(center, ellipse cover, rgba(30, 87, 153, 0) 0%, black 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: -webkit-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 0%, black 100%);
-        background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 0%, black 100%);
+#portfolio a:hover {
+        opacity: 1;
+}
+#portfolio a:hover img {
+        transform:scale(1.1);
 }
 
 #contacts {
