@@ -15,7 +15,7 @@ $(function() {
             var bdy = document.querySelector('body');
             var doc = document.documentElement;
 
-              if(bdy.scrollTop > 800 || doc.scrollTop > 800) {
+              if(bdy.scrollTop > 500 || doc.scrollTop > 500) {
                 topButton.classList.add('show');
               } else {
                 topButton.classList.remove('show');
