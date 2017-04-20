@@ -581,10 +581,6 @@ html {
   position: fixed;
   width: 100%;
   z-index: 100; }
- /* @media (max-width: 767px) {
-    #header {
-      display: block;
-      position: relative; } }*/
   #header nav {
     position: relative; }
   #header ul {
@@ -632,10 +628,14 @@ html {
   height: 50px;
   position: relative;
   cursor: pointer;
-  display: none; }
+  display: none;
+  margin-top: 8px; }
   @media (max-width: 767px) {
     .menu-opener {
       display: block; } }
+  @media (max-width: 767px) {
+    .menu-opener {
+      margin-top: 4px; } }
 
 .menu-opener:before,
 .menu-opener:after,
@@ -792,6 +792,7 @@ h2 {
 }
 .go-top i {
   margin: 5px 0;
+  font-size: 20px;
 }
 .show {display: block;}
 
