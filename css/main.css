@@ -355,9 +355,21 @@ th {
 
 @font-face {
   font-family: 'loraregular';
-  src: url("lora-regular-webfont.woff2") format("woff2"), url("lora-regular-webfont.woff") format("woff");
+  src: url("../fonts/lora-regular-webfont.woff2") format("woff2"),
+   url("../fonts/lora-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+    font-family: 'Nautilus Pompilius';
+    src: local('Nautilus Pompilius'),
+     local('NautilusPompilius'),
+        url('../fonts/nautiluspompilius.woff2') format('woff2'),
+        url('../fonts/nautiluspompilius.woff') format('woff'),
+        url('../fonts/nautiluspompilius.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
 @font-face {
   font-family: 'icomoon';
@@ -551,17 +563,28 @@ html {
     body,
     html {
       font-size: 16px; } }
+.contacts {
+  color:#fff;
+  float: left;
+  margin-left: 10px;
+  display: none;}
+  @media (max-width: 767px) {
+    .contacts {
+      display: block; } }
 
+.contacts p {
+  margin-bottom: 10px;
+}
 #header {
   background: #000;
   padding: 10px;
   position: fixed;
   width: 100%;
   z-index: 100; }
-  @media (max-width: 767px) {
+ /* @media (max-width: 767px) {
     #header {
       display: block;
-      position: relative; } }
+      position: relative; } }*/
   #header nav {
     position: relative; }
   #header ul {
@@ -608,6 +631,7 @@ html {
   width: 50px;
   height: 50px;
   position: relative;
+  cursor: pointer;
   display: none; }
   @media (max-width: 767px) {
     .menu-opener {
@@ -739,7 +763,10 @@ html {
 
 h2 {
   color: #fff;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  font-family: 'Nautilus Pompilius';
+  letter-spacing: 1px; }
+
   @media (max-width: 767px) {
     h2 {
       margin-bottom: 30px; } }
@@ -751,6 +778,23 @@ h2 {
   max-width: 1000px;
   margin: 0 auto; }
 
+.go-top {
+  color:#fff;
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 60px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  text-align: center;
+  z-index: 600;
+}
+.go-top i {
+  margin: 5px 0;
+}
+.show {display: block;}
+
 #about {
   text-align: center;
   padding: 107px 10px;
@@ -759,16 +803,19 @@ h2 {
     #about {
       padding: 10px; } }
   #about img {
-    vertical-align: top; }
+    vertical-align: top;
+    width: 58%;
+    margin: 30px; }
   #about .photo {
-    width: 40%; }
+    width: 50%;
+    text-align: center; }
     @media (max-width: 767px) {
       #about .photo {
         width: 100%;
         text-align: center; } }
   #about .descriptive {
     padding: 30px;
-    width: 60%; }
+    width: 50%; }
     @media (max-width: 767px) {
       #about .descriptive {
         width: 100%;
