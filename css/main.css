@@ -608,7 +608,7 @@ html {
       #header ul {
         position: absolute;
         width: 300px;
-        top: 30px;
+        top: 56px;
         right: -310px;
         display: block;
         background: #272727;
@@ -645,7 +645,7 @@ html {
       display: block; } }
   @media (max-width: 767px) {
     .menu-opener {
-      margin-top: 4px; } }
+} }
 
 .menu-opener:before,
 .menu-opener:after,
