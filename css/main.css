@@ -370,6 +370,16 @@ th {
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'),
+     local('OpenSans'),
+        url('../fonts/opensans.woff2') format('woff2'),
+        url('../fonts/opensans.woff') format('woff'),
+        url('../fonts/opensans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
 @font-face {
   font-family: 'icomoon';
@@ -450,7 +460,7 @@ h1, .h1 {
   font-size: 41px; }
 
 h2, .h2 {
-  font-size: 35px; }
+  font-size: 50px; }
 
 h3, .h3 {
   font-size: 24px; }
@@ -557,7 +567,7 @@ input[type='submit'] {
 body,
 html {
   height: 100%;
-  font-family: 'loraregular';
+  font-family: 'Open Sans';
   color: #333; }
   @media (max-width: 479px) {
     body,
@@ -576,11 +586,12 @@ html {
   margin-bottom: 10px;
 }
 #header {
-  background: #000;
+  background: #272727;
   padding: 10px;
   position: fixed;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  box-shadow: 0 0 20px #fff; }
   #header nav {
     position: relative; }
   #header ul {
@@ -600,7 +611,7 @@ html {
         top: 30px;
         right: -310px;
         display: block;
-        background: #000;
+        background: #272727;
         padding: 10px 20px; } }
     #header ul li {
       text-transform: uppercase; }
@@ -613,7 +624,6 @@ html {
       color: #fff;
       font-weight: bold;
       letter-spacing: 1px;
-      text-shadow: 2px 2px 10px #b4dd48;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
       #header ul a:hover {
@@ -683,13 +693,12 @@ html {
   position: relative;
   text-align: center;
   vertical-align: middle;
-  background: url(../images/01.jpg) no-repeat 50% 50%;
+  background: url(../images/luca-bravo.jpg) no-repeat 50% 50%;
   background-size: cover;
   text-transform: uppercase;
   color: #fff;
   font-size: 32px;
-  margin-bottom: 107px;
-  padding: 100px 10px; }
+  padding: 100px 30px; }
   @media (max-width: 767px) {
     .header {
       margin-bottom: 20px; } }
@@ -775,8 +784,10 @@ h2 {
       font-size: 25px; } }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto; }
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 107px;
+  background: rgba(255, 255, 255, .3); }
 
 .go-top {
   color:#fff;
@@ -884,6 +895,7 @@ h2 {
   box-shadow: 0 0 20px #fff;
   overflow: hidden;
   color: #ddd;
+  font-weight: 200;
   margin-bottom: 20px; }
   .box h3 {
     text-align: center; }
@@ -896,7 +908,7 @@ h2 {
   text-align: left; }
 
 #pskils {
-  padding: 107px 10px;
+  padding: 107px 30px;
   text-align: center; }
   @media (max-width: 767px) {
     #pskils {
@@ -923,7 +935,7 @@ h2 {
       padding: 10px 0; }
 
 #portfolio {
-  padding: 107px 10px;
+  padding: 107px 30px;
   text-align: center; }
   @media (max-width: 767px) {
     #portfolio {
@@ -972,7 +984,7 @@ h2 {
 
 #contacts {
   text-align: center;
-  padding: 107px 10px;
+  padding: 107px 30px;
   font-size: 25px; }
   @media (max-width: 767px) {
     #contacts {
